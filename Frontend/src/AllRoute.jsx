@@ -22,7 +22,6 @@ const AllRoute = () => {
             </GoogleOAuthProvider>
           }
         />
-
         <Route path="/detail" element={<ProductDetail />} />
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>

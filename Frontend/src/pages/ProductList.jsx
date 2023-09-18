@@ -16,7 +16,7 @@ const ProductList = ({ userId }) => {
   const [searchKeyword, setSearchKeyword] = useState("");
   const [selectedDiet, setSelectedDiet] = useState("");
   const Base_url =
-    "https://api.spoonacular.com/recipes/random?number=5&apiKey=5c518d49481941d4a8f204a0680f05f9";
+    "https://api.spoonacular.com/recipes/random?number=15&apiKey=5c518d49481941d4a8f204a0680f05f9";
 
 
     const fetchRecipe = (keyword = "", diet = "") => {

@@ -7,8 +7,8 @@ import ProductDetail from "./pages/ProductDetail";
 import Wishlist from "./pages/Wishlist";
 
 const AllRoute = () => {
-  const clientId =
-    "184262426582-vvtv55dcvq3v234n8920n5416njiujfq.apps.googleusercontent.com";
+  const clientId =process.env.REACT_APP_CLIENT_ID;
+
   return (
     <div>
       <Routes>

@@ -1,0 +1,73 @@
+.account-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.account-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.account-name {
+  flex-grow: 1;
+  color: #fff;
+}
+
+.account-header a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: larger;
+}
+
+.account-header a:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 1024px) {
+  .account-image {
+    width: 50px;
+    height: 50px;
+  }
+  .account-name {
+    font-size: 1.3rem;
+  }
+  .recipe-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .account-image {
+    width: 40px;
+    height: 40px;
+  }
+  .account-name {
+    font-size: 1.1rem;
+  }
+  .recipe-container {
+    grid-template-columns: 1fr;
+  }
+  .account-header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .account-name {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px; 
+    margin-top: 80px;
+}
+
+.recipe { 
+    width: 90%;
+    max-width: 600px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.recipe:hover {
+    transform: translateY(-5px); 
+}
+
+.card-title,
+.card-label {
+    font-weight: bold;
+    padding: 15px 20px;
+    background-color: #c2e2c8;
+}
+.card-title:nth-child(1){
+    background-color: rgb(243, 197, 229);
+}
+.card-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.ingredients-list,
+.diets-list,
+.dish-types-list {
+    padding: 10px 20px;
+}
+
+.ingredient-item,
+.diet-item,
+.dish-type-item {
+    padding: 5px 0;
+    color: #333;
+}
+
+.card-instruction,
+.card-summary {
+    padding: 10px 20px;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .recipe{
+        width: calc(50% - 30px); 
+    }
+}

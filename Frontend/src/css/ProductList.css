@@ -1,0 +1,135 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+}
+.recipe-search {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-top: 80px;
+}
+
+.recipe-search form {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-search input,
+.recipe-search select,
+.recipe-search button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.recipe-search input {
+  flex: 2;
+  border: 1px solid #d0d0d0;
+}
+
+.recipe-search select {
+  flex: 1;
+  border: 1px solid #d0d0d0;
+  background-color: #ffffff;
+}
+
+.recipe-search button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.recipe-search button:hover {
+  background-color: #0056b3;
+}
+
+.recipe-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+  margin: auto;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+}
+
+.recipe-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.recipe-summary {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.recipe-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1ea114;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.recipe-button:hover {
+  background-color: #ecc30c;
+}
+
+@media (max-width: 1024px) {
+  .recipe-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 10px;
+  }
+  .recipe-search form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .recipe-search input,
+  .recipe-search select,
+  .recipe-search button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

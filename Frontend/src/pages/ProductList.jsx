@@ -82,7 +82,7 @@ const ProductList = ({ userId }) => {
       })
         .then((response) => {
           alert(response.data.msg);
-          navigate("wishlist", { state: { userId } });
+          
         })
         .catch((error) => {
           console.log(error.message);

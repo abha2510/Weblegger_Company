@@ -10,8 +10,8 @@ function stripHTML(htmlString) {
 }
 
 const Wishlist = () => {
-  const location = useLocation();
-  let userId = location.state ? location.state.userId : null;
+ let userId=localStorage.getItem("userId")
+ 
   if (!userId) {
     userId = localStorage.getItem("userId");
   }

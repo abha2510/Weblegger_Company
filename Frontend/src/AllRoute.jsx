@@ -5,6 +5,7 @@ import Account from "./context/Account";
 import CheckAuth from "./pages/CheckAuth";
 import ProductDetail from "./pages/ProductDetail";
 import Wishlist from "./pages/Wishlist";
+import Home from "./pages/Home";
 
 const AllRoute = () => {
   const clientId =process.env.REACT_APP_CLIENT_ID;
@@ -23,7 +24,8 @@ const AllRoute = () => {
           }
         />
         <Route path="/detail" element={<ProductDetail />} />
-        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/home/wishlist" element={<Wishlist />} />
+        <Route path="/home" element={<Home/>}></Route>
       </Routes>
     </div>
   );

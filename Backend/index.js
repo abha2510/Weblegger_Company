@@ -3,6 +3,8 @@ const { connection } = require("./db");
 require("dotenv").config();
 const cors = require("cors");
 const { recipeRouter } = require("./router/Recipe.Router");
+const Cityrouter = require("./router/City.Router");
+const ForecastRouter = require("./router/Forecast.Router");
 
 const app = express();
 app.use(express.json());
@@ -13,6 +15,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/recipe",recipeRouter)
+app.use("/api/weather",Cityrouter)
+app.use("/api/forecast",ForecastRouter)
 
 app.listen(process.env.port, async () => {
   try {
@@ -23,3 +27,4 @@ app.listen(process.env.port, async () => {
   }
   console.log("Port is Running on port", process.env.port);
 });
+

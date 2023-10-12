@@ -13,9 +13,9 @@ const Home = ({ userId }) => {
         <img className="account-image" src={account.picture} alt="profile" />
         <h1 className="account-name">{account.given_name}</h1>  
 
-        <Link >Home</Link>
+        <Link to="/">Home</Link>
  
-        <Link to="/wishlist">MyFavourite</Link>
+        <Link to="/home/wishlist">MyFavourite</Link>
       </div>
       <ProductList userId={userId} />
     </div>

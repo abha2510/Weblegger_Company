@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "../css/Wishlist.css";
-import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 
 function stripHTML(htmlString) {
